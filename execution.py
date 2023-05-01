@@ -11,6 +11,8 @@ import torch
 import nodes
 
 import comfy.model_management
+import translate.baiduTrans
+
 
 def get_input_data(inputs, class_def, unique_id, outputs={}, prompt={}, extra_data={}):
     valid_inputs = class_def.INPUT_TYPES()
@@ -273,6 +275,14 @@ def validate_prompt(prompt):
     outputs = set()
     for x in prompt:
         class_ = nodes.NODE_CLASS_MAPPINGS[prompt[x]['class_type']]
+
+        #TODO 翻译
+        try:
+            if class_ == nodes.NODE_CLASS_MAPPINGS['CLIPTextEncode']:
+                prompt[x]['inputs']['text'] = translate.baiduTrans.zh2en(prompt[x]['inputs']['text'])
+        except:
+            pass
+
         if hasattr(class_, 'OUTPUT_NODE') and class_.OUTPUT_NODE == True:
             outputs.add(x)
 

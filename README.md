@@ -31,7 +31,7 @@ This ui will let you design and execute advanced stable diffusion pipelines usin
 - [GLIGEN](https://comfyanonymous.github.io/ComfyUI_examples/gligen/)
 - Starts up very fast.
 - Works fully offline: will never download anything.
-- [Config file](extra_model_paths.yaml.example) to set the search paths for models.
+- [Config file](extra_model_paths.yaml) to set the search paths for models.
 
 Workflow examples can be found on the [Examples page](https://comfyanonymous.github.io/ComfyUI_examples/)
 
@@ -71,7 +71,7 @@ Just download, extract and run. Make sure you put your Stable Diffusion checkpoi
 
 #### How do I share models between another UI and ComfyUI?
 
-See the [Config file](extra_model_paths.yaml.example) to set the search paths for models. In the standalone windows build you can find this file in the ComfyUI directory. Rename this file to extra_model_paths.yaml and edit it with your favorite text editor.
+See the [Config file](extra_model_paths.yaml) to set the search paths for models. In the standalone windows build you can find this file in the ComfyUI directory. Rename this file to extra_model_paths.yaml and edit it with your favorite text editor.
 
 ## Colab Notebook
 
