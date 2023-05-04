@@ -193,3 +193,9 @@ I wanted to learn how Stable Diffusion worked in detail. I also wanted something
 ### Who is this for?
 
 This is for anyone that wants to make complex workflows with SD or that wants to learn more how SD works. The interface follows closely how SD works and the code should be much more simple to understand than other SD UIs.
+
+
+cd custom_nodes
+git clone https://github.com/Davemane42/ComfyUI_Dave_CustomNode
+git clone https://github.com/WASasquatch/was-node-suite-comfyui
+git clone https://github.com/BlenderNeko/ComfyUI_Cutoff.git
